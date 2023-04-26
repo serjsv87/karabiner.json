@@ -7,11 +7,8 @@ Easy move between widnows and macos
 
 You can see new Sikach Rules. Add this
 
-В этой конфигурации продуманые пробросы смены языка(так же как ctrl+space) на cmd+shift.
-проброшени клавіши Ctrl+C, Ctrl+V, Ctrl+X => Cmd+C (Copy), Cmd+V (Paste), Cmd+X (Cut), Cmd+W (Close)
-То что отличает эту конфигурцию от других то что при нажатии на ctrl+c то срабатывает не только cmd+c а так же дублируется ctr+c для тех случаев когда нужен имено ctrl+c (например в терминале).
-ctrl+w отключен в terminal так как эта комбинация нужна для cli программ
+It seems like you are sharing a configuration file for Karabiner, a program that allows you to customize keyboard shortcuts on macOS. The configuration file includes several modifications such as remapping the Ctrl+C, Ctrl+V, Ctrl+X keys to Cmd+C, Cmd+V, Cmd+X, and Cmd+W, as well as adding a duplicate mapping for Ctrl+C for use in the terminal.
 
-Отключения\включение микрофона по клавиши f6. По факту уменьшается звук микрофона к 0 и увеличивается к 100 при нажатии. Так же высвечивается индикатор этого. 
-Что бы работали клавиши скриншота, но при этом работали переключения языка то добавлены комбинации 
-Map Ctrl + Shift + 3-5 to Cmd + Shift + 3-5
+Additionally, the configuration file enables the use of F6 key to toggle the microphone on and off with an indicator, and maps the Ctrl+Shift+3-5 keys to their corresponding screenshot shortcuts while still allowing language switching.
+
+It's important to note that modifying system keyboard shortcuts can have unintended consequences, so it's recommended to proceed with caution and make backups of your original configuration before making changes.
