@@ -1,4 +1,7 @@
 # karabiner.json
+
+Config for https://karabiner-elements.pqrs.org/
+
 Easy move between widnows and macos
 
 1. add this file to 
