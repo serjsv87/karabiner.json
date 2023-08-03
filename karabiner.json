@@ -211,11 +211,17 @@
         ]
       },
       {
-        "description": "Toggle microphone on F6",
+        "description": "Toggle microphone on cmd+shift+m",
         "manipulators": [
           {
             "from": {
-              "key_code": "f6"
+              "key_code": "m",
+              "modifiers": {
+                "mandatory": [
+                  "left_command",
+                  "left_shift"
+                ]
+              }
             },
             "to": [
               {
@@ -305,7 +311,7 @@
         ]
       },
       {
-        "description": "Cmd + Shift to Ctrl + Space",
+        "description": "Cmd + Shift to Ctrl + Space (only if Cmd + Shift is pressed alone)",
         "manipulators": [
           {
             "from": {
@@ -313,10 +319,13 @@
               "modifiers": {
                 "mandatory": [
                   "left_command"
+                ],
+                "optional": [
+                  "any"
                 ]
               }
             },
-            "to_if_alone": [
+            "to_if_alones": [
               {
                 "key_code": "spacebar",
                 "modifiers": [
@@ -328,6 +337,32 @@
           }
         ]
       },
+      {
+        "description": "Cmd + Shift + any to Cmd + Shift + any",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "left_shift",
+              "modifiers": {
+                "mandatory": [
+                  "left_command",
+                  "any"
+                ]
+              }
+            },
+            "to": [
+              {
+                "key_code": "left_shift",
+                "modifiers": [
+                  "left_command",
+                  "any"
+                ]
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      },      
       {
         "description": "Ctrl+W => Cmd+W (Close)",
         "manipulators": [
